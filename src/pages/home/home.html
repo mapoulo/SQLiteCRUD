@@ -1,0 +1,49 @@
+
+
+<div class="container">
+
+  <div class="head">
+   <h1>EmployeeList</h1> 
+  </div>
+
+  <div class="content">
+
+  <ion-list>
+    <ion-item *ngFor="let student of students; let i=index">
+  
+      <div class="Emp">
+        <div class="pic"> <img src={{pictures[i].path}}></div>
+        <h1>{{pictureCount}}</h1>
+        <div class="detail">
+          <h3> Name: {{ student.name}} </h3>
+          <h3> Occupation:  {{ student.occupation}}</h3>
+          <h3> Email: {{ student.email }}</h3>
+          <h3> Phone:  {{ student.phone}}</h3><br/>
+          <button (click)="delete(student.id)" class="DelBtn">Delete</button> <br/>
+          <button (click)="editStudent(student.id)" class="DelBtn">Edit</button>
+        </div>
+      </div>
+     
+     
+      
+    </ion-item>
+  </ion-list>
+
+
+  
+  <ion-fab bottom right>
+    <button ion-fab >
+      <ion-icon name='apps'></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+      <button (click)="addStudents()" ion-fab><ion-icon  name="add"></ion-icon></button>
+      <button  (click)="showFilter()" ion-fab><ion-icon name="search"></ion-icon></button>
+      <button ion-fab><ion-icon name="edit"></ion-icon></button>
+      
+    </ion-fab-list>
+  </ion-fab>
+
+
+  </div>
+
+</div>

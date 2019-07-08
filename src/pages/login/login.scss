@@ -1,0 +1,52 @@
+page-login {
+
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(248, 240, 240);
+        height: 100%;
+        width: 100%;
+    }
+
+    .top{
+        display: flex;
+        height: 25%;
+        background-color: rgb(155, 155, 240);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        bottom: 40px;
+        border-radius: 20px;
+        flex: 1;
+        text-align: center;
+    }
+
+    ion-input{
+        border-bottom: 1px solid gray;
+    }
+
+    .item1{
+        margin-top: 10%;
+    }
+
+    .item2{
+        margin-top: 20%;
+    }
+
+    .btn{
+        width: 40%;
+        height: 40px;
+        margin: auto;
+        border-radius: 20px;
+        background-color: rgb(155, 155, 240);
+    }
+}

@@ -1,0 +1,56 @@
+page-home {
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(248, 240, 240);
+       
+    }
+
+    .head{
+        height: 10%;
+        text-align: center;
+        font-size: 20px;
+        background-color: rgb(155, 155, 240);
+        color: white;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+       
+    }
+
+    .Emp{
+        display: flex;
+        height: 20%;
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+
+    .pic{
+        width: 40%;
+    }
+
+    .detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        padding-left: 10%;
+    }
+
+    .DelBtn{
+        background-color: rgb(155, 155, 240);
+        border-radius: 20px;
+        width: 50%;
+    }
+}
